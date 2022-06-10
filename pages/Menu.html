@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- google font setting -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant&family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/styles/_Menu.css" />
+
+    <title>Brunch Menu</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="MainContainer">
+        <div id="nav">
+          <a class="navbar-brand logo" href="#"
+            ><img
+              src="https://lisa6125.github.io/vue_cafe/img/logo.74a9562c.png"
+              alt=""
+            />
+            <div class="logo_name">BRUNCH HOUSE</div>
+          </a>
+
+          <div class="pagesLink">
+            <a href="./Home.html" class="pagesLink_item">Home</a>
+            <a
+              href="./Menu.html"
+              aria-current="page"
+              class="pagesLink_item router-link-exact-active router-link-active"
+              >Menu</a
+            ><a href="./About.html" class="pagesLink_item">About</a
+            ><a href="./Contact.html" class="pagesLink_item">Contact</a>
+          </div>
+
+          <div class="openIcon">
+            <svg
+              class="svg-inline--fa fa-bars fa-w-14"
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="bars"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              data-fa-i2svg=""
+            >
+              <path
+                fill="currentColor"
+                d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+              ></path>
+            </svg>
+          </div>
+
+          <div class="sideList">
+            <a href="./Home.html" class="sideList_item">Home</a>
+            <a
+              href="./Menu.html"
+              class="sideList_item router-link-exact-active router-link-active"
+              aria-current="page"
+              >Menu</a
+            ><a href="./About.html" class="sideList_item">About</a
+            ><a href="./Contact.html" class="sideList_item">Contact</a>
+          </div>
+        </div>
+
+        <div id="Menu">
+          <div class="textBanner">
+            <img src="/pictures/foods/work2.jpg" alt="" />
+            <div class="text">The Menu</div>
+          </div>
+
+          <div class="MenuList">
+            <div class="MenuItems">
+              <div class="MenuContent">
+                <div class="MenuContent_pic">
+                  <img src="/pictures/foods/薑汁燒肉磚壓.jpeg" alt="" />
+                  <div class="name">WRAPANINI</div>
+                </div>
+                <div class="MenuContent_description">
+                  <div class="MenuContent_description_item">
+                    <div class="MenuContent_description_item_text">
+                      <div class="itemTitle">法式紅酒牛肉磚壓吐司</div>
+                      <p>
+                        一口咬下感受醇厚的紅酒香氣與香酥的磚壓吐司，再搭配一杯咖啡就是最佳組合！
+                      </p>
+                    </div>
+                    <div class="MenuContent_description_item_price">$105</div>
+                  </div>
+                  <div class="MenuContent_description_item">
+                    <div class="MenuContent_description_item_text">
+                      <div class="itemTitle">鮪魚玉米磚壓吐司</div>
+                      <p>簡單即是美味，就用美好的早餐替一整天充滿電吧！</p>
+                    </div>
+                    <div class="MenuContent_description_item_price">$95</div>
+                  </div>
+                  <div class="MenuContent_description_item">
+                    <div class="MenuContent_description_item_text">
+                      <div class="itemTitle">薑汁燒肉磚壓吐司</div>
+                      <p>
+                        以日式風味燒肉搭配牽絲的起司，以及烤得恰到好處的外層酥脆的磚壓吐司，每一口都好療癒啊！
+                      </p>
+                    </div>
+                    <div class="MenuContent_description_item_price">$90</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="MenuItems">
+              <div class="MenuContent">
+                <div class="MenuContent_pic">
+                  <img src="../pictures/foods/豬肉起司炊米堡.jpeg" alt="" />
+                  <div class="name">HAMBURGER</div>
+                </div>
+                <div class="MenuContent_description">
+                  <div class="MenuContent_description_item">
+                    <div class="MenuContent_description_item_text">
+                      <div class="itemTitle">豬肉起司瑪芬堡</div>
+                      <p>
+                        以多汁豬肉排再加上起司片及濃郁起司醬，每一口都讓人好滿足。
+                      </p>
+                    </div>
+                    <div class="MenuContent_description_item_price">$65</div>
+                  </div>
+                  <div class="MenuContent_description_item">
+                    <div class="MenuContent_description_item_text">
+                      <div class="itemTitle">火腿起司蛋堡</div>
+                      <p>
+                        底層是一層美乃滋再夾入一整片火腿、一顆蛋、一片起司，最後再抹上有顆粒的花生醬，鹹香滋味讓人忍不著一口接一口。
+                      </p>
+                    </div>
+                    <div class="MenuContent_description_item_price">$50</div>
+                  </div>
+                  <div class="MenuContent_description_item">
+                    <div class="MenuContent_description_item_text">
+                      <div class="itemTitle">豬肉起司炊米堡</div>
+                      <p>
+                        米堡有別於傳統漢堡麵包的外皮，吃起來口感層次豐富，豬肉跟起司在口中交織出完美風味，當作早午餐也非常適合！
+                      </p>
+                    </div>
+                    <div class="MenuContent_description_item_price">$55</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="MenuItems">
+              <div class="MenuContent">
+                <div class="MenuContent_pic">
+                  <img src="../pictures/foods/飲料.jpeg" alt="" />
+                  <div class="name">DRINKS</div>
+                </div>
+                <div class="MenuContent_description">
+                  <div class="MenuContent_description_item">
+                    <div class="MenuContent_description_item_text">
+                      <div class="itemTitle">美式咖啡</div>
+                      <p>
+                        豐富口感的濃縮咖啡與熱水結合，呈現豐潤美好的細緻口感
+                      </p>
+                    </div>
+                    <div class="MenuContent_description_item_price">$60</div>
+                  </div>
+                  <div class="MenuContent_description_item">
+                    <div class="MenuContent_description_item_text">
+                      <div class="itemTitle">經典拿鐵</div>
+                      <p>
+                        濃縮咖啡的濃醇絲滑口感，搭配新鮮蒸煮的優質鮮奶，完美滿足你渴望一杯好咖啡的心情
+                      </p>
+                    </div>
+                    <div class="MenuContent_description_item_price">$80</div>
+                  </div>
+                  <div class="MenuContent_description_item">
+                    <div class="MenuContent_description_item_text">
+                      <div class="itemTitle">英式紅茶</div>
+                      <p>單細胞生茶萃取技術，提升回甘滋味</p>
+                    </div>
+                    <div class="MenuContent_description_item_price">$50</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <div class="bottom_useful_links">
+            <div class="title">USEFUL LINKS</div>
+            <div class="links-box">
+              <ul>
+                <li class="links">Lorem ipsum dolor</li>
+                <li class="links">Lorem ipsum dolor</li>
+                <li class="links">Lorem ipsum dolor</li>
+                <li class="links">Lorem ipsum dolor</li>
+                <li class="links">Lorem ipsum dolor</li>
+              </ul>
+              <ul>
+                <li class="links">Lorem ipsum dolor</li>
+                <li class="links">Lorem ipsum dolor</li>
+                <li class="links">Lorem ipsum dolor</li>
+              </ul>
+            </div>
+          </div>
+          <div class="bottom_mission">
+            <div class="bottom menu_picbox">
+              <div class="pic">
+                <img src="../pictures/foods/火腿起司蛋堡.jpeg" alt="" />
+              </div>
+              <div class="pic">
+                <img src="../pictures/foods/烤腿排麥香三明治.jpeg" alt="" />
+              </div>
+              <div class="pic">
+                <img src="../pictures/foods/墨西哥辣豬肉漢堡.jpeg" alt="" />
+              </div>
+              <div class="pic">
+                <img src="../pictures/foods/豬肉起司炊米堡.jpeg" alt="" />
+              </div>
+              <div class="pic">
+                <img src="../pictures/foods/燻雞三明治.jpeg" alt="" />
+              </div>
+              <div class="pic">
+                <img src="../pictures/foods/鮪魚玉米磚壓.jpeg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section>
+          <div class="footer">
+            © 2022 Polo0220 | All Rights Reserved | 僅用於練習
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

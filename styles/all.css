@@ -1,0 +1,340 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#app {
+  background: url(/pictures/backgroundImage.png);
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+}
+
+#MainContainer {
+  width: 100%;
+  max-width: 1150px;
+  background: #fff;
+  margin: 15px auto;
+  color: #d2750d;
+  font-family: "Cormorant", serif;
+  box-shadow: 0 0 30px 1px rgb(0 0 0 / 15%);
+}
+
+#nav {
+  font-size: 24px;
+  width: 100%;
+  height: 90px;
+  background: #e5a86f;
+  top: 0;
+  position: sticky;
+  transition: all 0.3s ease-in-out;
+  z-index: 900;
+  border-radius: 5px 5px 0 0;
+}
+
+#nav .logo {
+  width: 70px;
+  height: 90px;
+  margin-left: 50px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#nav .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+#nav .logo_name {
+  position: absolute;
+  right: -240px;
+  top: 50%;
+  color: #fef7f1;
+  transform: translateY(-50%);
+  font-family: Cormorant, serif;
+  font-size: 30px;
+}
+
+#nav .pagesLink {
+  float: right;
+  height: 100%;
+  color: #fef7f1;
+}
+
+#nav .pagesLink,
+#nav .sideList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#nav .pagesLink_item {
+  padding: 0 30px;
+  height: 100%;
+  line-height: 90px;
+  border-left: 1px solid hsla(0, 0%, 100%, 0.274);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: #f0f8ff;
+  text-decoration: none;
+  font-family: "Parisienne", cursive;
+}
+
+#nav .router-link-exact-active {
+  background: #ffce9f;
+  color: #d2750d;
+}
+
+#nav .sideList_item {
+  padding: 10px 20px;
+  height: 100%;
+  line-height: 40px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-family: "Parisienne", cursive;
+}
+
+#nav .sideList {
+  background: rgba(39, 39, 39, 0.383);
+  width: calc(100% - 20px);
+  margin: 0 10px;
+  position: absolute;
+  top: 100px;
+  opacity: 0;
+  z-index: 800;
+  transition: all 0.3s ease-in-out;
+}
+
+#nav .sideList.openSideList {
+  opacity: 1;
+}
+
+#nav .openIcon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  #nav .pagesLink {
+    display: none;
+  }
+
+  #nav .openIcon {
+    display: block;
+  }
+
+  #nav .logo {
+    width: 50px;
+    margin-left: 20px;
+  }
+
+  #nav .logo_name {
+    font-size: 24px;
+    right: -200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #nav .sideList_item {
+    font-size: 16px;
+  }
+}
+
+.bottom {
+  background: #fef7f1;
+  padding: 20px;
+  font-weight: 900;
+}
+
+.bottom,
+.bottom_mission,
+.bottom_mission .menu_picbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.bottom > div {
+  width: 50%;
+}
+
+.bottom_useful_links {
+  padding: 20px;
+}
+
+.bottom .title {
+  font-size: 18px;
+  text-align: left;
+}
+
+.bottom .links-box {
+  display: flex;
+  padding: 10px 20px;
+}
+
+.bottom .links-box ul {
+  width: 50%;
+  margin: 0;
+}
+
+.bottom .links-box ul .links {
+  list-style: circle;
+  margin: 10px 0;
+}
+
+.bottom_mission .menu_picbox {
+  padding: 0;
+}
+
+.bottom_mission .menu_picbox .pic {
+  padding: 2px;
+  width: 33.33%;
+  height: 100px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.bottom_mission .menu_picbox .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bottom_mission .menu_description {
+  display: block;
+}
+
+.bottom_mission > div {
+  width: 90%;
+}
+
+.bottom_mission .menu_description .description {
+  line-height: 1.2;
+  font-weight: 500;
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .bottom > div {
+    width: 100%;
+  }
+
+  .bottom_mission > div {
+    width: 100%;
+  }
+}
+
+.footer {
+  background: #e5a86f;
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 0 5px 5px;
+}
