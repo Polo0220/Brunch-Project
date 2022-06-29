@@ -68,7 +68,6 @@ p {
 }
 
 #Home .block2 {
-  width: calc(100% - 40px);
   height: 300px;
   padding: 30px;
   margin: 20px;
@@ -353,7 +352,6 @@ p {
 }
 
 #Home .block5_picView {
-  width: calc(100% - 40px);
   height: 400px;
   position: relative;
   margin: 20px;
